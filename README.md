@@ -1,2 +1,2 @@
-# flask_mysql_examples
-Docker, docker-compose, python, flask
+# flask_sql
+Pet project for configuring Flask library with MySQL

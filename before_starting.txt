@@ -1,0 +1,28 @@
+Коли ви завантажите даний проєкт собі на ноутбуки, зробіть наступні кроки:
+1) створіть .env файл і помістіть туди наступне:
+
+MYSQL_HOST=db
+MYSQL_USER=root
+MYSQL_PASSWORD=example
+MYSQL_DATABASE=test_db
+
+2) налаштуйте на у себе docker i docker-compose
+3) для того, щоб все у вас запрацювало введіть наступну команду:
+
+docker-compose up --build - ця команда потрібна для того, щоб завантажити MySQL і створити контейнер з базою даних, в яку ви будете вносити зміни
+docker ps -a - ця команда для перевірки, чи контейнер працює і на якому порті він знаходиться
+
+Також від себе рекомендую програму "DB Beaver" для локальної роботи із БД, або налаштуйте у VS Code розширення "Database Client". Це вам дайсть змогу вносити зміни і бачити їх на льоту.
+
+Лінки, щоб ви не заблукали:
+! https://www.geeksforgeeks.org/get-the-data-received-in-a-flask-request/ - ознайомлення із модульом requests для того, що не налаштовувати axios.
+! https://hub.docker.com/_/mysql - сам dockerhub i mysql.
+
+* https://alembic.sqlalchemy.org/en/latest/ - для контролю змін із боку Flask у вашій БД.
+* https://www.sqlalchemy.org/ - для можливості взаємодії Flaks i Python з вашою БД.
+* https://flask-authorize.readthedocs.io/en/latest/index.html - налаштування авторизації і аутентифікації.
+
+^ https://www.w3schools.com/js/js_ajax_intro.asp - чудовий ресурс по AJAX, дивіться чи він вам потрібен чи ні.
+^ https://axios-http.com/docs/intro - для отримання і обробки даних з Flask.
+
+Бажаю вам удачі, у вас все вийде!!!
